@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 function NavBar() {
     return (
@@ -15,8 +15,12 @@ function NavBar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto py-0">
-                                <Link to="/" className="nav-item nav-link active">Home</Link>
-                                <Link to="/about" className="nav-item nav-link">About</Link>
+                               <NavLink to="/" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Home</NavLink>
+                               <NavLink to="/about" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >About</NavLink>
+                               <NavLink to="/contact" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Contact</NavLink>
+                               <NavLink to="/blog" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Blog</NavLink>
+                               
+                                
                                 <Link to="service.html" className="nav-item nav-link">Service</Link>
                                 <Link to="price.html" className="nav-item nav-link">Pricing</Link>
                                 <div className="nav-item dropdown">
@@ -30,7 +34,6 @@ function NavBar() {
                                         <Link to="search.html" className="dropdown-item">Search</Link>
                                     </div>
                                 </div>
-                                <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
                         </div>
                     </nav>
