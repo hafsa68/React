@@ -15,14 +15,23 @@ function NavBar() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ms-auto py-0">
-                               <NavLink to="/" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Home</NavLink>
-                               <NavLink to="/about" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >About</NavLink>
-                               <NavLink to="/contact" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Contact</NavLink>
-                               <NavLink to="/blog" className={({isActive}) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Blog</NavLink>
-                               
-                                
+                                <NavLink to="/" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Home</NavLink>
+                                <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >About</NavLink>
+                                <NavLink to="/contact" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Contact</NavLink>
+                                <NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Blog</NavLink>
+
+
                                 <Link to="service.html" className="nav-item nav-link">Service</Link>
                                 <Link to="price.html" className="nav-item nav-link">Pricing</Link>
+                                <div className="nav-item dropdown">
+                                    <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</Link>
+                                    <div className="dropdown-menu m-0">
+                 <NavLink to="/blog" className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}  >All Blog</NavLink>
+                 <NavLink to="/blog/new" className={({ isActive }) => (isActive ? "dropdown-item" : "nav-item dropdown-item")}  >New Blog</NavLink>
+
+                                        
+                                    </div>
+                                </div>
                                 <div className="nav-item dropdown">
                                     <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link>
                                     <div className="dropdown-menu m-0">
