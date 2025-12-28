@@ -30,7 +30,7 @@ alert(response.data)
     
     <h3>Bog Entry</h3>
     <form className='form' onSubmit={handleSubmit}>
-<input type='text' name='title' value={inputs.title} className='form-control' onChange={handleChange}/> <br/>
+<input type='text' name='title' value={inputs.title} className='form-control' onChange={handleChange} placeholder='Enter title'/> <br/>
 <textarea className='form-control' name='description' value={inputs.description} onChange={handleChange}></textarea> <br/>
 <input type='submit' className='btn btn-primary'/>
     </form>

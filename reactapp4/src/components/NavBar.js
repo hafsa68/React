@@ -17,8 +17,8 @@ function NavBar() {
                             <div className="navbar-nav ms-auto py-0">
                                 <NavLink to="/" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Home</NavLink>
                                 <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >About</NavLink>
+                                <NavLink to="/about" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  ></NavLink>
                                 <NavLink to="/contact" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Contact</NavLink>
-                                <NavLink to="/blog" className={({ isActive }) => (isActive ? "active nav-item nav-link" : "nav-item nav-link")}  >Blog</NavLink>
 
 
                                 <Link to="service.html" className="nav-item nav-link">Service</Link>
@@ -28,6 +28,7 @@ function NavBar() {
                                     <div className="dropdown-menu m-0">
                  <NavLink to="/blog" className={({ isActive }) => (isActive ? "dropdown-item" : "dropdown-item")}  >All Blog</NavLink>
                  <NavLink to="/blog/new" className={({ isActive }) => (isActive ? "dropdown-item" : "nav-item dropdown-item")}  >New Blog</NavLink>
+                 <NavLink to="/blog/new1" className={({ isActive }) => (isActive ? "dropdown-item" : "nav-item dropdown-item")}  >New Blog 1</NavLink>
 
                                         
                                     </div>
